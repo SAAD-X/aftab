@@ -1,413 +1,226 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-    <title>RakinSadAftab</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-        * {
-            margin 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f1f1f1;
-            min-height: 100vh;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contact-info {
-            display: flex;
-            width: 100%;
-
-            align-items: center;
-            justify-content: center;
-            padding: 0 20px;
-        }
-
-        .card {
-            background-color: black;
-            padding: 0 20px;
-            margin: 0 10px;
-            width: calc(40% - 27px);
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        .card-icon {
-            font-size: 28px;
-            background:black;
-            width: 60px;
-            height: 60px;
-            text-align: center;
-            line-height: 60px !important;
-            border-radius: 50%;
-            transition: 0.3s linear;
-        }
-
-        .card:hover .card-icon {
-            background: none;
-            color: blue;
-            transform: scale(1.6);
-        }
-
-        .card p {
-            margin-top: 20px;
-            font-weight: 300;
-            letter-spacing: 2px;
-            max-height: 0;
-            opacity: 0;
-            transition: 0.3s linear;
-        }
-
-        .card:hover p {
-            max-height: 40px;
-            opacity: 1;
-        }
-
-        .header {
-            padding: 10px;
-            text-align: center;
-            color: white;
-        }
-
-        .header h1 {
-            font-size: 40px;
-        }
-
-        .navbar {
-            overflow: hidden;
-
-        }
-
-        .navbar a {
-            position: relative;
-            display: inline-block;
-            color: #2196f3;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            text-decoration: none;
-            font-size: 24px;
-            overflow: hidden;
-            transition: 0.2s;
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 20px 20px;
-            text-decoration: none;
-        }
-
-        .navbar a.right {
-            float: right;
-        }
-
-        .navbar a:hover {
-            color: #255784;
-            background: #2196f3;
-            box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .side {
-            flex: 30%;
-            background-color: #f1f1f1;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .main {
-            flex: 50%;
-            background-color:black;
-            padding: 10px;
-            text-align: center;
-            color: blanchedalmond;
-        }
-        
-        .mainc{
-            padding: 2px;
-            background-color: lime;
-            text-align: center;
-            width: 50%;
-        }
-
-        .fakeimg {
-            width: 105%;
-            padding: 30px;
-        }
-
-        @media screen and (max-width: 700px) {
-            .row {
-                flex-direction: column;
-            }
-        }
-
-        @media screen and (max-width: 400px) {
-            .navbar a {
-                float: none;
-                width: 100%;
-            }
-        }
-
-        @media screen and (max-width: 800px) {
-            .contact-info {
-                flex-direction: column;
-            }
-
-            .card {
-                width: 100%;
-                max-width: 300px;
-                margin: 10px 0;
-            }
-        }
-    </style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakin Sad Aftab</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+<body>
+    <!--Starting Navbar Properties-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand text-white" href="#">Rakin <small>Sad Aftab</small></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Ending Navbar Properties-->
 
-<body style="background-color: black;">
+      <!--Starting Jumbotron-->
+      <div class="jumbotron bg-dark">
+       <div class="row">
+           <div class="col-6 col-md-3">
+               <img src="https://user-images.githubusercontent.com/66327542/94724968-e0f65480-037c-11eb-9398-d3857e3c9b4a.png" height="100" width="90%" alt="" class="img-fluid">
+           </div>
+           <div class="col-12 col-md-9 text-white">
+                <h1 class="display-4"><b>Biography</b></h1>
+                <p class="lead text-white-50">Hi there!<br>
+                    I am Rakin Sad Aftab, student of Computer Science. Currently, am studying at American International University-Bangladesh(AIUB). I'm very interested in learning and i love to learn new things. I love to write code with background music. I am very much foody person. I live in Jatrabari with my family.</p>
+                <hr class="my-4">
+                <h3>Social Media Links</h3>
+                <div class="row large justify-content-around flex-row">
+                    <a href="https://web.facebook.com/profile.php?id=100017768731890" class="col-2"><strong><i class="fab fa-facebook w3-hover-opacity" style="color: blue"></i></strong></a>
 
-    <div class="header">
-       
-        <h3>HELLO!</h3>
+                    <a href="https://www.instagram.com/rakinshadaftab/" class="col-2"><strong><i class="fab fa-instagram w3-hover-opacity" style="color: blue;"></i> </strong></a>
 
-        <p>Welcome to my profile</p>
-
-    </div>
-
-    <div class="navbar">
-
-        <a href="https://web.facebook.com/profile.php?id=100017768731890"><strong><i class="fab fa-facebook w3-hover-opacity" style="color: blue"></i></strong></a>
-
-        <a href="https://www.instagram.com/rakinshadaftab/"><strong><i class="fab fa-instagram w3-hover-opacity" style="color: blue;"></i> </strong></a>
-
-        <a href="https://www.linkedin.com/in/rakin-sad-aftab-5369081a9/" class="right"><strong> <i class="fab fa-linkedin-in w3-hover-opacity" style="color: blue;"></i></strong></a>
-
-        <a href="https://github.com/SAAD-X" class="right"><strong> <i class="fab fa-github w3-hover-opacity" style="color: blue;"></i></strong></a>
-
-        <a href="https://twitter.com/rakinsadaftab" class="middle"><strong> <i class="fab fa-twitter w3-hover-opacity" style="color: blue;"></i></strong></a>
-
-        <a href="https://bitbucket.org/Venom-A/" class="right"><strong> <i class="fab fa-bitbucket w3-hover-opacity" style="color: blue;"></i></strong></a>
-
-        <a href="https://t.me/rakinsadaftab" class="left"><strong> <i class="fab fa-telegram w3-hover-opacity"style="color: blue;"></i></strong></a>
-        
-        <a href="https://medium.com/@rakinsadaftab" class="right"><strong> <i class="fab fa-medium w3-hover-opacity"style="color: blue;"></i></strong></a>
-
-        <a href="https://scholar.google.com/citations?user=BKGqgw8AAAAJ&hl=en" class="right"><strong> <i class="fas fa-user-graduate w3-hover-opacity"style="color: blue;"></i></strong></a>
-
-    </div>
-
-    <div class="row">
-
-        <div class="side" style="background-color: black;">
-
-            <div class="fakeimg" style="height:200px;">
-
-                <img height="190px" width="190px" src="https://user-images.githubusercontent.com/66327542/94724968-e0f65480-037c-11eb-9398-d3857e3c9b4a.png">
-
-            </div>
-
-            <div class="fakeimg" style="height: 170px; ">
-
-                <h3 style="color: blue">Biography</h3>
-
-                <p style="color:rgb(180, 180, 180);">Hi there!<br>I am Rakin Sad Aftab, student of Computer Science. Currently, am studying at American International University-Bangladesh(AIUB). I'm very interested in learning and i love to learn new things. I love to write code with background music. I am very much foody person. I live in Jatrabari with my family.<br> </p>
-
-            </div><br><br><br><br>
-
-            <div class="fakeimg" style="height: 90px;">
-
-                <h3 style="color: blue"><i class="fas fa-graduation-cap"></i>Education</h3>
-
-            </div>
-
-            <div class="fakeimg" style="height:100px;color:rgb(180, 180, 180);">
-
-                <b><i><i class="fas fa-graduation-cap" ></i>BSc. in Computer Science(UG)</i></b>
-
-                <div style="color:rgb(180, 180, 180); text-align: center;">AIUB</div>
-
-            </div>
-
-            <div class="fakeimg" style="height:100px; color:rgb(180, 180, 180);">
-
-            <b><i><i class="fas fa-graduation-cap"></i> Higher Secondary certificate(HSC),2019</i></b>
-
-                <div style="color:rgb(180, 180, 180);">
-
-                   Dr. Mahbubur Rahman Mollah College
+                    <a href="https://www.linkedin.com/in/rakin-sad-aftab-5369081a9/" class="col-2" class="right"><strong> <i class="fab fa-linkedin-in w3-hover-opacity" style="color: blue;"></i></strong></a>
 
                 </div>
-
-            </div>
-
-            <div class="fakeimg" style="height:100px; color:rgb(180, 180, 180);">
-
-                <b><i><i class="fas fa-graduation-cap"></i>Secondary School certificate(SSC),2017</i></b><br>
-
-                <div style="color:rgb(180, 180, 180);">
-
-                RRN Pilot Govt High School
-
-                </div>
-
-                <div class="fakeimg" style="height:180px; color:rgb(180, 180, 180);">
-                    <h2 style="color: blue">! Interested !</h2>
                 
-                        <p><i class="fas fa-code w3-hover-opacity"> Competitive Programming</i></p>
+            </div>
+       </div>
+       <hr class="my-4">
+       <div class="row ">
+        <div class="col-12 col-md-6">
+            <img src="./img/education.svg" class="img-fluid" alt="">
+        </div>
+        <div class="col-12 col-md-6 text-white text-center">
+          <h2 class="display-4 text-white text-center" id="education"><b> Education</b></h2>
+            <div class="education text-center">
+              <hr class="my-4">
+                    <div class="col">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span > <strong>American International University-Bangladesh</strong><br>Bacholer Science in Computer Science and Engineering</span>
+                      
+                </div>
+                <hr class="my-4">
+                <div class="col">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span > <strong>Dr Mahbubur Rahman Mollah College</strong><br>Studied Science HSC-2019</span>
+                      
+                </div>
+                <hr class="my-4">
+                <div class="col">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span > <strong>RRN Pilot Govt High School</strong><br>studied Science SSC-2017</span>
+                      <br>
+                </div>
+            </div>
+        </div>
+       </div>
+       <hr class="my-4">
+        <div class="container-fluid" id="Skills">
+          <div class="row " >
+            <div class="col-12 col-md-6">
+                <div class="card bg-dark">
+                    <div class="card-header bg-dark"><h3 class="text-white">Skills</h3></div>
+                    <div class="card-body">
+                        <div class="row" >
+                            <div class="col-12 col-md-3 text-white"><strong>HTML</strong></div>
+                            <div class="col-12 col-md-9">
+                               <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
+                               </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-white"><strong>CSS</strong></div>
+                            <div class="col-12 col-md-9">
+                               <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                               </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-white"><strong>JavaScript</strong></div>
+                            <div class="col-12 col-md-9">
+                               <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 10%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div>
+                               </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-white"><strong>Java</strong></div>
+                            <div class="col-12 col-md">
+                               <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="7-" aria-valuemin="0" aria-valuemax="100" ></div>
+                               </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-white"><strong>C/C++</strong></div>
+                            <div class="col-12 col-md-9">
+                               <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div>
+                               </div>
+                              </div>
+                        </div>
+                        <h6 class="text-white text-lg-center">Other Skills</h6>
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-white"><strong>Creativity</strong></div>
+                            <div class="col-12 col-md-9">
+                               <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div>
+                               </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-white"><strong>Photography</strong></div>
+                            <div class="col-12 col-md">
+                               <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div>
+                               </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-white"><strong>Video Editing</strong></div>
+                            <div class="col-12 col-md">
+                               <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div>
+                               </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card bg-dark">
+                <div class="card-header bg-dark text-white"><h3>Interested</h3></div>
+                <div class="card-body interest text-white">
+                  <p><i class="fas fa-code w3-hover-opacity"> Competitive Programming</i></p>
                         <p><i class="fas fa-database w3-hover-opacity"> Data Science</i></p>
                         <p><i class="fas fa-laptop-code w3-hover-opacity"> Ethical Hacking</i></p>
                         <p><i class="fas fa-user-shield w3-hover-opacity"> Cyber Security</i></p>
-                
-
-                </div><br>
-
-                <div class="fakeimg " style="height:200px; color:rgb(180, 180, 180);">
-                    <h2 style="color: blue">Let's code together in online</h2>
-                
-<a class="w3-hover-opacity" href="https://codeforces.com/profile/RakinSadAftab" target="_blank"><img src="https://img.shields.io/badge/Codeforces-%23292929.svg?&style=flat-square&logo=Codeforces&logoColor=white" alt="Codeforces"></a>
-
-<a class="w3-hover-opacity" href="https://www.codechef.com/users/rakinsadaftab" target="_blank"><img src="https://img.shields.io/badge/CodeChef-%23292929.svg?&style=flat-square&logo=CodeChef&logoColor=white" alt="CodeChef"></a>
-                    <br> <br>
-<a class="w3-hover-opacity" href="https://www.hackerearth.com/@rakinsad" target="_blank"><img src="https://img.shields.io/badge/hackerearth-%23292929.svg?&style=flat-square&logo=hackerearth&logoColor=white" alt="hackerearth"></a>
-
-<a class="w3-hover-opacity" href="https://codepen.io/rakinsadaftab" target="_blank"><img src="https://img.shields.io/badge/codepen-%23292929.svg?&style=flat-square&logo=codepen&logoColor=white" alt="codepen"></a>
-
-<h2 style="color: blue">Currently Learning</h2>
-<i class="fab fa-git-alt w3-hover-opacity" style="font-size:30px;color: lime"></i>
-<i class="fab fa-python w3-hover-opacity" style="font-size:30px;color: lime"></i><br><br>
-<i class="fab fa-js-square w3-hover-opacity" style="font-size:30px;color: lime"></i>
-<i class="far fa-keyboard w3-hover-opacity" style="font-size:30px;color: lime"></i>
-
                 </div>
-
+              </div>
             </div>
-
         </div>
-
-        <div class="main" style="background-color:black">
-
-            <p style="color: blue; text-align: center;"><b><i class="fa fa-code fa-fw  w3-margin-right" style="color:blue;"></i>  Coding Skills</b></p>
-
-            <p style="color: lime;">C</p>
-
-            <div class="w3-light-grey w3-round-small w3-hover-opacity">
-                <div class="mainc " style="width:90%">90%</div>
-            </div>
-
-            <p style="color: lime;">C++</p>
-            
-            <div class="w3-light-grey w3-round-small w3-hover-opacity">
-                <div class="mainc" style="width:80%">80%</div>
-            </div>
-
-            <p style="color: lime;">JAVA</p>
-            
-            <div class="w3-light-grey w3-round-small w3-hover-opacity">
-                <div class="mainc" style="width:90%">90%</div>
-            </div>
-
-            <p style="color: lime;">HTML</p>
-            
-            <div class="w3-light-grey w3-round-small w3-hover-opacity">
-                <div class="mainc" style="width:90%">90%</div>
-            </div>
-
-            <p style="color: lime;">CSS</p>
-            
-            <div class="w3-light-grey w3-round-small w3-hover-opacity">
-                <div class="mainc" style="width:60%">60%</div>
-            </div>
-
-            <br>
-            <p style="color:blue; text-align: center;"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-hover-opacity"></i> Others Skills</b></p>
-
-            <p style="color: lime;">Creativity</p>
-            
-            <div class="w3-light-grey w3-round-small w3-hover-opacity">
-                <div class="mainc" style="width:100%">100%</div>
-            </div>
-            
-            <p style="color: lime;">Photography</p>
-            
-            <div class="w3-light-grey w3-round-small w3-hover-opacity">
-                <div class="mainc" style="width:70%">70%</div>
-            </div>
-
-            <p style="color: lime;">Media</p>
-            
-            <div class="w3-light-grey w3-round-small w3-hover-opacity">
-                <div class="mainc" style="width:50%">50%</div>
-            </div>
-
-            <p style="color: lime;">MS Word - Excel - Powerpoint</p>
-            
-            <div class="w3-light-grey w3-round-small w3-hover-opacity">
-                <div class="mainc" style="width:95%">95%</div>
-            </div>
-
-            <p style="color: lime;">Video Editing</p>
-            
-            <div class="w3-light-grey w3-round-small w3-hover-opacity">
-                <div class="mainc" style="width:20%">20%</div>
-            </div>
-            <p class="w3-hover-opacity" style="color: lime; text-align: center;"><b><a href="https://www.codecademy.com/users/aftabrakinsad/achievements" target="_blank" rel="noopener"><span> My Codecademy Badges</span></a></b></p>
-
-
-            <div style="display: inline-block; text-align: center;">
-
-            </div>
-            <br>
-            <hr>
-            <h2 style="text-align: center; color: #98a6ad">Contact With Me</h2>
-            <h5 style="text-align: center; color: white;">We Are Ready To Talk <i class="fas fa-rss"></i></h5>
-            <div class="fakeimg" style="height:70px;"></div>
+        <hr class="my-4">
+        <div class="container-fluid bg-dark " id="contact">
+         <div class="row justify-content-center align-items-center">
+          <div class="col col-md-4"> <img src="./img/contact.svg" alt="" class="img-fluid align-self-center"></div>
+          <div class="col col-md-7">
+            <h2 class="text-center text-white">Contact With Me</h2>
             <div class="contact-info">
-                <div class="card">
-                    <i class="card-icon far fa-envelope"></i>
-                    <p>aftabhpy@gmail.com</p>
-                </div>
+              <div class="wave">
+                  <i class="card-icon  far fa-envelope"></i>
+                  <p>aftabhpy@gmail.com</p>
+              </div>
 
-                <div class="card">
-                    <i class="card-icon fas fa-phone" style=""></i>
-                    <p>+880-1746-166400<br>+880-1889-046538</p>
-                </div>
+              <div class="wave">
+                  <i class="card-icon fas fa-phone" style=""></i>
+                  <p>+880-1746-166400<br>+880-1889-046538</p>
+              </div>
 
-                <div class="card">
-                    <i class="card-icon fas fa-map-marker-alt"></i>
-                    <p>Gazipur,Dhaka<br>Bangladesh</p>
-                </div>
-            </div>
-
+              <div class="wave">
+                  <i class="card-icon fas fa-map-marker-alt"></i>
+                  <p>Gazipur,Dhaka<br>Bangladesh</p>
+              </div>
+          </div>
+          </div>
+         </div>
+       
         </div>
+      </div>
+      <hr class="my-4">
+    
+        </div>
+        <div class="footer-dark text-center">
+          Powered by The Laxcoorp Corporation
+          <p class="text-center">2021 © Rakin Sad Aftab</p>
+        </div>
+      <!--Ending Jumbotron-->
+      
 
-        <footer class="main">
-            <p>Powered by <a href="https://saad-x.github.io/-/" class="w3-hover-opacity" target="_blank">The Laxcoorp Corporation</a></p>
-            <p>2020 © Rakin Sad Aftab</p>
-        </footer>
-
+      <!--Starting main section-->
+      
+       
+    
+      <!--Ending main section-->
+      
+    <!-- Java Script CDNS-->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
