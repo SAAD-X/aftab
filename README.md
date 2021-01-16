@@ -1,5 +1,5 @@
 # Portfolio / CV / Resume
-<hr>
+
 <div>
     <p><b>How it's looks like</b></p>
     
