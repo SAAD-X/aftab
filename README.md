@@ -1,4 +1,4 @@
-# Portfolio / CV / Resume
+# Portfolio
 
 <div>
     <p><b>How it's looks like</b></p>
