@@ -15,5 +15,5 @@
     <p><b>How it looks like now.</b></p>
 <img align="middle" width="1000px" src="https://user-images.githubusercontent.com/66327542/108256912-45794b00-7188-11eb-8d5d-7fdf828c6ff3.png">
 </br>
-<img align="middle" width="1000px" src="https://user-images.githubusercontent.com/66327542/108257380-e405ac00-7188-11eb-8057-f0147d337f4f.png">
+<img align="middle" width="1000px" src="https://user-images.githubusercontent.com/66327542/108257493-0dbed300-7189-11eb-92fa-8bf6b9cb97f4.png">
 </div>
